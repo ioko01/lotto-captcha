@@ -1,0 +1,18 @@
+<MyRoot>:
+    captcha_label: captcha_label
+    BoxLayout:
+        orientation: "vertical"
+        Label:
+            text: "CAPTCHA"
+            font_size: 30
+            color: 0, 0.62, 0.96
+
+        Label:
+            id: captcha_label
+            text: "_"
+            font_size: 30
+
+        Button:
+            text: "Generate"
+            font_size: 15
+            on_press: root.set_captcha()
